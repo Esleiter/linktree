@@ -1,6 +1,6 @@
-import './globals.css'
+import "../styles/globals.css";
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       {/*
@@ -10,5 +10,7 @@ export default function RootLayout({ children }) {
       <head />
       <body>{children}</body>
     </html>
-  )
-}
+  );
+};
+
+export default RootLayout;
