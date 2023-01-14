@@ -95,7 +95,7 @@ const Home = () => {
         >
           <div className={`${baseStyles.item} group/item`}>
             <WebIcon fontSize="large" className="ml-[10px]" />
-            <div>My personal website</div>
+            <div>My custom browser homepage</div>
             <div className="mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:text-black">
               <IosShareIcon onClick={(e) => handleClickOpen(e)} />
             </div>
