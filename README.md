@@ -1,6 +1,8 @@
 # Linktree clone
 
-I am using Next.js 13, Tailwind CSS and Material UI.
+I am using React.js, Next.js 13, Tailwind CSS and Material UI.
+
+Deployed on Vercel.
 
 ---
 
