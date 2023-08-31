@@ -3,25 +3,26 @@
 import { useState } from "react";
 import Image from "next/image";
 import VerifiedIcon from "@mui/icons-material/Verified";
-import HouseIcon from "@mui/icons-material/House";
-import ParkIcon from "@mui/icons-material/Park";
-import WebIcon from "@mui/icons-material/Web";
-import IosShareIcon from "@mui/icons-material/IosShare";
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
 
 import SimpleDialog from "../components/Dialog.js";
 
+const tab = '\u00A0'
+
 const baseStyles = {
   item: `
-		bg-[#f5f4f4]
+		bg-[#161B22]
 		mb-[16px]
 		h-[56px]
+    text-white
+    border-solid
+    border-2
+    border-[#4B5563]
 		flex
 		justify-between
 		items-center
-		rounded-[4px]
+		rounded-lg
 		hover:scale-[1.02]
 		transform
 		duration-[.15s]
@@ -31,6 +32,7 @@ const baseStyles = {
 		mr-[12px]
 	`,
   icon: `
+    text-[#1D9CEB]
 		hover:scale-[1.10]
 	`,
 };
@@ -52,52 +54,38 @@ const Home = () => {
   return (
     <main className="flex flex-col items-center pt-[64px]">
       <Image
-        src="https://avatars.githubusercontent.com/u/11678456?v=4"
+        src="https://avatars.githubusercontent.com/u/57963142?v=4"
         width={96}
         height={96}
         className="border rounded-full mb-[16px]"
       />
 
       <div className="flex items-center">
-        <h1 className="font-bold text-[20px]">@FloSlv</h1>
+        <h1 className="font-bold text-[20px] text-white">@esleiter{tab}</h1>
         <VerifiedIcon fontSize="small" className="text-[#00b6ff]" />
       </div>
 
       <div className="mt-[32px] w-[100%] max-w-[680px]">
-        <a href="https://flo-slv.dev" target="_blank" rel="noopener norefferer">
+        <a href="https://esleiter.com" target="_blank" rel="noopener norefferer">
           <div className={`${baseStyles.item} group/item`}>
-            <HouseIcon fontSize="large" className="ml-[10px]" />
-            <div>My personal website</div>
-            <div className="mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:text-black">
-              <IosShareIcon onClick={(e) => handleClickOpen(e)} />
+            {tab}
+            <div>Sitio web</div>
+            <div className="rounded-full p-1 mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:bg-[#0D1117]">
+              <MoreHorizIcon onClick={(e) => handleClickOpen(e)} />
             </div>
           </div>
         </a>
 
         <a
-          href="https://links.flo-slv.dev"
+          href="https://blog.esleiter.com"
           target="_blank"
           rel="noopener norefferer"
         >
           <div className={`${baseStyles.item} group/item`}>
-            <ParkIcon fontSize="large" className="ml-[10px]" />
-            <div>Link-in-bio page</div>
+            {tab}
+            <div>Blog</div>
             <div className="mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:text-black">
-              <IosShareIcon onClick={(e) => handleClickOpen(e)} />
-            </div>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/Flo-Slv/browser-homepage"
-          target="_blank"
-          rel="noopener norefferer"
-        >
-          <div className={`${baseStyles.item} group/item`}>
-            <WebIcon fontSize="large" className="ml-[10px]" />
-            <div>My custom browser homepage</div>
-            <div className="mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:text-black">
-              <IosShareIcon onClick={(e) => handleClickOpen(e)} />
+              <MoreHorizIcon onClick={(e) => handleClickOpen(e)} />
             </div>
           </div>
         </a>
@@ -111,25 +99,11 @@ const Home = () => {
 
       <div className="flex gap-2 mt-[24px]">
         <a
-          href="https://github.com/flo-slv"
+          href="https://github.com/esleiter"
           target="_blank"
           rel="noopener norefferer"
         >
           <GitHubIcon fontSize="large" className={baseStyles.icon} />
-        </a>
-        <a
-          href="https://linkedin.com/in/flo-slv"
-          target="_blank"
-          rel="noopener norefferer"
-        >
-          <LinkedInIcon fontSize="large" className={baseStyles.icon} />
-        </a>
-        <a
-          href="https://twitter.com/floslv1"
-          target="_blank"
-          rel="noopener norefferer"
-        >
-          <TwitterIcon fontSize="large" className={baseStyles.icon} />
         </a>
       </div>
     </main>

@@ -2,9 +2,9 @@ import "../styles/globals.css";
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="es">
       <head />
-      <body className="h-screen bg-gradient-to-tl from-sky-400 to-sky-200">
+      <body className="h-screen bg-[#0D1117]">
         {children}
       </body>
     </html>

@@ -6,9 +6,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
-import PersonIcon from "@mui/icons-material/Person";
 import AddIcon from "@mui/icons-material/Add";
-import { blue } from "@mui/material/colors";
 
 const SimpleDialog = (props) => {
   const { onClose, selectedValue, open } = props;
@@ -19,7 +17,7 @@ const SimpleDialog = (props) => {
 
   return (
     <Dialog onClose={handleClose} open={open}>
-      <DialogTitle>Set backup account</DialogTitle>
+      <DialogTitle>Comparte este link</DialogTitle>
       <List sx={{ pt: 0 }}>
         <ListItem disableGutters>
           <ListItemButton
@@ -31,7 +29,7 @@ const SimpleDialog = (props) => {
                 <AddIcon />
               </Avatar>
             </ListItemAvatar>
-            <ListItemText primary="Add account" />
+            <ListItemText primary="SOON" />
           </ListItemButton>
         </ListItem>
       </List>
