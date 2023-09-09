@@ -5,6 +5,8 @@ import Image from "next/image";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedIn from "@mui/icons-material/LinkedIn";
 
 import SimpleDialog from "../components/Dialog.js";
 
@@ -98,12 +100,26 @@ const Home = () => {
       />
 
       <div className="flex gap-2 mt-[24px]">
+      <a
+          href="https://www.linkedin.com/in/xesleiter/"
+          target="_blank"
+          rel="noopener norefferer"
+        >
+          <LinkedIn fontSize="large" className={baseStyles.icon} />
+        </a>
         <a
           href="https://github.com/esleiter"
           target="_blank"
           rel="noopener norefferer"
         >
           <GitHubIcon fontSize="large" className={baseStyles.icon} />
+        </a>
+        <a
+          href="https://instagram.com/xesleiter"
+          target="_blank"
+          rel="noopener norefferer"
+        >
+          <InstagramIcon fontSize="large" className={baseStyles.icon} />
         </a>
       </div>
     </main>
