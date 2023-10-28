@@ -71,7 +71,7 @@ const Home = () => {
       <a href="https://linktree.esleiter.com/CV.pdf" target="_blank" rel="noopener norefferer">
           <div className={`${baseStyles.item} group/item`}>
             {tab}
-            <div>CV</div>
+            <div>CV 📄</div>
             <div className="rounded-full p-1 mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:bg-[#0D1117]">
               <MoreHorizIcon onClick={(e) => handleClickOpen(e)} />
             </div>
@@ -81,7 +81,7 @@ const Home = () => {
         <a href="https://esleiter.com" target="_blank" rel="noopener norefferer">
           <div className={`${baseStyles.item} group/item`}>
             {tab}
-            <div>Sitio web</div>
+            <div>Sitio web 🌐</div>
             <div className="rounded-full p-1 mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:bg-[#0D1117]">
               <MoreHorizIcon onClick={(e) => handleClickOpen(e)} />
             </div>
@@ -95,7 +95,7 @@ const Home = () => {
         >
           <div className={`${baseStyles.item} group/item`}>
             {tab}
-            <div>Blog</div>
+            <div>Blog 💻</div>
             <div className="mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:text-black">
               <MoreHorizIcon onClick={(e) => handleClickOpen(e)} />
             </div>
