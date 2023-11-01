@@ -68,16 +68,6 @@ const Home = () => {
       </div>
 
       <div className="mt-[32px] w-[100%] max-w-[680px]">
-      <a href="https://linktree.esleiter.com/CV.pdf" target="_blank" rel="noopener norefferer">
-          <div className={`${baseStyles.item} group/item`}>
-            {tab}
-            <div>CV 📄</div>
-            <div className="rounded-full p-1 mr-[10px] invisible group-hover/item:visible group-hover/item:text-gray-500 group-hover/item:hover:bg-[#0D1117]">
-              <MoreHorizIcon onClick={(e) => handleClickOpen(e)} />
-            </div>
-          </div>
-        </a>
-
         <a href="https://esleiter.com" target="_blank" rel="noopener norefferer">
           <div className={`${baseStyles.item} group/item`}>
             {tab}
